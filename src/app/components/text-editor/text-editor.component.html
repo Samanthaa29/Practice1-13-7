@@ -1,0 +1,31 @@
+<h1> TEXT EDITOR </h1>
+<h2 [ngStyle]="{'font-size.px':size}">
+     {{text}}
+</h2>
+
+<input type="text" placeholder="Write your text" [(ngModel)]="text">
+<button [disabled] = "isDisabled" (click)="increaseSize()"> +</button>
+<button [disabled] = "isDisabled" (click)="decreaseSize()"> -</button>
+
+<div *ngIf="text.length > 7">
+    <p>WARNING! The length can not be higher than 7</p>
+</div>
+
+<div *ngIf="size> 30">
+    <p>WARNING! The font size can not be higher than 30px</p>
+</div>
+
+
+
+
+
+<!-- <h2>esto es un segundo párrafo</h2>
+<input type="text" placeholder ="message" [value]="name" (keyup)= "updateName($event)"> 
+<input type="text" placeholder ="message" [(ngModel)]="name">
+<input type="text" placeholder ="message" [(ngModel)]="lastName">
+<button [disabled] = "isDisabled" (click)="sayHello()"> Submit</button>
+
+<div *ngIf='isPepe()'> 
+    <p> [ngStyle]=""> This is a secret message</p>
+   font-size: 20 px, background-color: aquamarine: 20px; background-color:aquamarine; 
+</div> -->

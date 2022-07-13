@@ -1,0 +1,16 @@
+h1 {
+    color:red;
+};
+h2 {
+    color:blue;
+}
+.odd{
+    background-color: yellow;
+    color: plum;
+    font-weight: 200;
+}
+.even{
+    background-color: plum;
+    color: yellow;
+    font-weight: 500;
+}
